@@ -1,0 +1,7 @@
+/* https://www.thesitewizard.com/css/mobile-friendly-one-column-layout.shtml */
+input, select, button, textarea {
+  max-width: 100% ;
+}
+meter, progress, output {
+  max-width: 100% ;
+} 
