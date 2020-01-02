@@ -1,186 +1,202 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css" "type="text/css">
 </head>
-   <body style = "text-align:center;">
-      <h1 style = "color:green;">
-         Pokemans which you are???
-      </h1>
-      <p id = "top" style =
-         "font-size: 15px; font-weight: bold;">
-      </p>
-      <button id = "button" onclick = "pickAPokeman()">
-      Push me!
-      </button>
-      <p id = "bottom" style =
-         "font-size: 24px; font-weight: bold; color: green;">
-      </p>
-      <script>
-         var top = document.getElementById('top');
-         var bottom = document.getElementById('bottom');
+ <body style="text-align:center">
+   <div class="pure-g">
+     <div class="pure-u-1 pure-u-md-1-3"></div>
+    <div class="pure-u-1 pure-u-md-1-3">
 
-         var arr = [
-           "Bulbasaur",
-         "Ivysaur",
-         "Venusaur",
-         "Charmander",
-         "Charmeleon",
-         "Charizard",
-         "Squirtle",
-         "Wartortle",
-         "Blastoise",
-         "Caterpie",
-         "Metapod",
-         "Butterfree",
-         "Weedle",
-         "Kakuna",
-         "Beedrill",
-         "Pidgey",
-         "Pidgeotto",
-         "Pidgeot",
-         "Rattata",
-         "Raticate",
-         "Spearow",
-         "Fearow",
-         "Ekans",
-         "Arbok",
-         "Pikachu",
-         "Raichu",
-         "Sandshrew",
-         "Sandslash",
-         "Nidoran♀",
-         "Nidorina",
-         "Nidoqueen",
-         "Nidoran♂",
-         "Nidorino",
-         "Nidoking",
-         "Clefairy",
-         "Clefable",
-         "Vulpix",
-         "Ninetales",
-         "Jigglypuff",
-         "Wigglytuff",
-         "Zubat",
-         "Golbat",
-         "Oddish",
-         "Gloom",
-         "Vileplume",
-         "Paras",
-         "Parasect",
-         "Venonat",
-         "Venomoth",
-         "Diglett",
-         "Dugtrio",
-         "Meowth",
-         "Persian",
-         "Psyduck",
-         "Golduck",
-         "Mankey",
-         "Primeape",
-         "Growlithe",
-         "Arcanine",
-         "Poliwag",
-         "Poliwhirl",
-         "Poliwrath",
-         "Abra",
-         "Kadabra",
-         "Alakazam",
-         "Machop",
-         "Machoke",
-         "Machamp",
-         "Bellsprout",
-         "Weepinbell",
-         "Victreebel",
-         "Tentacool",
-         "Tentacruel",
-         "Geodude",
-         "Graveler",
-         "Golem",
-         "Ponyta",
-         "Rapidash",
-         "Slowpoke",
-         "Slowbro",
-         "Magnemite",
-         "Magneton",
-         "Farfetch’d",
-         "Doduo",
-         "Dodrio",
-         "Seel",
-         "Dewgong",
-         "Grimer",
-         "Muk",
-         "Shellder",
-         "Cloyster",
-         "Gastly",
-         "Haunter",
-         "Gengar",
-         "Onix",
-         "Drowzee",
-         "Hypno",
-         "Krabby",
-         "Kingler",
-         "Voltorb",
-         "Electrode",
-         "Exeggcute",
-         "Exeggutor",
-         "Cubone",
-         "Marowak",
-         "Hitmonlee",
-         "Hitmonchan",
-         "Lickitung",
-         "Koffing",
-         "Weezing",
-         "Rhyhorn",
-         "Rhydon",
-         "Chansey",
-         "Tangela",
-         "Kangaskhan",
-         "Horsea",
-         "Seadra",
-         "Goldeen",
-         "Seaking",
-         "Staryu",
-         "Starmie",
-         "Mr.",
-         "Mime",
-         "Scyther",
-         "Jynx",
-         "Electabuzz",
-         "Magmar",
-         "Pinsir",
-         "Tauros",
-         "Magikarp",
-         "Gyarados",
-         "Lapras",
-         "Ditto",
-         "Eevee",
-         "Vaporeon",
-         "Jolteon",
-         "Flareon",
-         "Porygon",
-         "Omanyte",
-         "Omastar",
-         "Kabuto",
-         "Kabutops",
-         "Aerodactyl",
-         "Snorlax",
-         "Articuno",
-         "Zapdos",
-         "Moltres",
-         "Dratini",
-         "Dragonair",
-         "Dragonite",
-         "Mewtwo",
-         "Mew"];
+            <h1 style = class=h>
+               Pokemans which you are???
+            </h1>
+            <p id = "top" style =
+               "font-size: 15px; font-weight: bold;">
+            </p>
 
-         var whichMon = Math.floor(Math.random() * 151);
+<style>
+  .b {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(66, 184, 221); /* this is a light blue */
+     font-size: 110%;
+  }
+</style>
+            <button id = "button"  class="b pure-button" onclick = "pickAPokeman()">
+            Push me!
+            </button>
+            <p id = "result" style =
+               "font-size: 24px; font-weight: bold; color: black;">
+            </p>
+            <script>
+               var result = document.getElementById('result');
 
-         function pickAPokeman() {
-           var whichMon = Math.floor(Math.random() * 151);
-               bottom.innerHTML =
-                   arr[whichMon];
-           }
-      </script>
+               var arr = [
+                 "Bulbasaur",
+               "Ivysaur",
+               "Venusaur",
+               "Charmander",
+               "Charmeleon",
+               "Charizard",
+               "Squirtle",
+               "Wartortle",
+               "Blastoise",
+               "Caterpie",
+               "Metapod",
+               "Butterfree",
+               "Weedle",
+               "Kakuna",
+               "Beedrill",
+               "Pidgey",
+               "Pidgeotto",
+               "Pidgeot",
+               "Rattata",
+               "Raticate",
+               "Spearow",
+               "Fearow",
+               "Ekans",
+               "Arbok",
+               "Pikachu",
+               "Raichu",
+               "Sandshrew",
+               "Sandslash",
+               "Nidoran♀",
+               "Nidorina",
+               "Nidoqueen",
+               "Nidoran♂",
+               "Nidorino",
+               "Nidoking",
+               "Clefairy",
+               "Clefable",
+               "Vulpix",
+               "Ninetales",
+               "Jigglypuff",
+               "Wigglytuff",
+               "Zubat",
+               "Golbat",
+               "Oddish",
+               "Gloom",
+               "Vileplume",
+               "Paras",
+               "Parasect",
+               "Venonat",
+               "Venomoth",
+               "Diglett",
+               "Dugtrio",
+               "Meowth",
+               "Persian",
+               "Psyduck",
+               "Golduck",
+               "Mankey",
+               "Primeape",
+               "Growlithe",
+               "Arcanine",
+               "Poliwag",
+               "Poliwhirl",
+               "Poliwrath",
+               "Abra",
+               "Kadabra",
+               "Alakazam",
+               "Machop",
+               "Machoke",
+               "Machamp",
+               "Bellsprout",
+               "Weepinbell",
+               "Victreebel",
+               "Tentacool",
+               "Tentacruel",
+               "Geodude",
+               "Graveler",
+               "Golem",
+               "Ponyta",
+               "Rapidash",
+               "Slowpoke",
+               "Slowbro",
+               "Magnemite",
+               "Magneton",
+               "Farfetch’d",
+               "Doduo",
+               "Dodrio",
+               "Seel",
+               "Dewgong",
+               "Grimer",
+               "Muk",
+               "Shellder",
+               "Cloyster",
+               "Gastly",
+               "Haunter",
+               "Gengar",
+               "Onix",
+               "Drowzee",
+               "Hypno",
+               "Krabby",
+               "Kingler",
+               "Voltorb",
+               "Electrode",
+               "Exeggcute",
+               "Exeggutor",
+               "Cubone",
+               "Marowak",
+               "Hitmonlee",
+               "Hitmonchan",
+               "Lickitung",
+               "Koffing",
+               "Weezing",
+               "Rhyhorn",
+               "Rhydon",
+               "Chansey",
+               "Tangela",
+               "Kangaskhan",
+               "Horsea",
+               "Seadra",
+               "Goldeen",
+               "Seaking",
+               "Staryu",
+               "Starmie",
+               "Mr.Mime",
+               "Scyther",
+               "Jynx",
+               "Electabuzz",
+               "Magmar",
+               "Pinsir",
+               "Tauros",
+               "Magikarp",
+               "Gyarados",
+               "Lapras",
+               "Ditto",
+               "Eevee",
+               "Vaporeon",
+               "Jolteon",
+               "Flareon",
+               "Porygon",
+               "Omanyte",
+               "Omastar",
+               "Kabuto",
+               "Kabutops",
+               "Aerodactyl",
+               "Snorlax",
+               "Articuno",
+               "Zapdos",
+               "Moltres",
+               "Dratini",
+               "Dragonair",
+               "Dragonite",
+               "Mewtwo",
+               "Mew"];
+
+               var whichMon = Math.floor(Math.random() * 151);
+
+               function pickAPokeman() {
+                 var whichMon = Math.floor(Math.random() * 151);
+                     result.innerHTML =
+                         arr[whichMon];
+                 }
+            </script>
+           </div>
+    <div class="pure-u-1 pure-u-md-1-3"></div>
+  </div>
    </body>
 </html>
